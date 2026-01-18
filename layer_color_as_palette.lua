@@ -40,6 +40,9 @@ local enabled = true
 
 
 local set_cels_to_layer_color = function(layer)
+    if layer.color.alpha <= 0 then
+        return
+    end
     -- update pixels in cel
     local layer_pc = app.pixelColor.rgba(
         layer.color.red,
