@@ -81,7 +81,7 @@ end
 local dlg = Dialog{id="layer_color_as_palette", title="Layer Colors As Palette"}
 dlg:label{label="Note: Set 'Sprite > Color Mode' to 'RGB Color'"}
 dlg:check{id='enabled', label='Enabled', selected=enabled}
-dlg:button{id='export', text='Export Layers', onclick=export_layers}
+-- dlg:button{id='export', text='Export Layers', onclick=export_layers}
 dlg:show{wait=false}
 
 local refresh = function (ev)
